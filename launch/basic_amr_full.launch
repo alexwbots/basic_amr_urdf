@@ -11,7 +11,7 @@
   </include>
 
   <!-- Robot model -->
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find basic_amr)/urdf/basic_amr_full.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find basic_amr_urdf)/urdf/basic_amr_full.xacro'" />
 
   <!-- Spawn the robot model -->
   <node name="movil" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model basic_amr -z 0.02" />
