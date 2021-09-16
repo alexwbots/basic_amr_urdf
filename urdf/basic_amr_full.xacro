@@ -4,7 +4,7 @@
 
   <!-- Begin - Include -->
 
-  <xacro:include filename="$(find basic_amr)/urdf/basic_amr_gazebo.xacro" />
+  <xacro:include filename="$(find basic_amr_urdf)/urdf/basic_amr_gazebo.xacro" />
 
   <!-- End - Include -->
 
