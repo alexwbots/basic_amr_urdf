@@ -2,7 +2,7 @@
 <launch>
 
   <!-- Description of the robot -->
-  <param name="robot_description" textfile="$(find basic_amr)/urdf/basic_amr.urdf" />
+  <param name="robot_description" textfile="$(find basic_amr_urdf)/urdf/basic_amr.urdf" />
 
   <!-- Publish the states of the robot's joints -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
@@ -12,6 +12,6 @@
 
   <!-- Visualization of the robot using Rviz -->
   <param name="use_gui" value="true"/>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find basic_amr)/config/basic_amr_config.rviz" required="true" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find basic_amr_urdf)/config/basic_amr_config.rviz" required="true" />
 
 </launch>
