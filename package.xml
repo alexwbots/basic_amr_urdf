@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>basic_amr</name>
+  <name>basic_amr_urdf</name>
   <version>0.1.0</version>
   <description>Basic autonomous mobile robot description package</description>
 
