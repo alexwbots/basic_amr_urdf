@@ -12,7 +12,7 @@
   </include>
 
   <!-- Robot model -->
-  <param name="robot_description" textfile="$(find basic_amr)/urdf/basic_amr_gazebo.urdf" />
+  <param name="robot_description" textfile="$(find basic_amr_urdf)/urdf/basic_amr_gazebo.urdf" />
 
   <!-- Spawn the robot model -->
   <node name="movil" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model basic_amr -z 0.02" />
