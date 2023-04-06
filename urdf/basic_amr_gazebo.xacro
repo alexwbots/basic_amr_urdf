@@ -4,7 +4,7 @@
 
   <!-- Begin - Gazebo definition -->
 
-  <gazebo reference="base">
+  <gazebo reference="base_link">
     <material>Gazebo/White</material>
   </gazebo>
 
