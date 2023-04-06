@@ -66,12 +66,14 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
+      <odometrySource>world</odometrySource>
       <robotBaseFrame>base_footprint</robotBaseFrame>
-      <publishWheelTF>true</publishWheelTF>
-      <publishOdom>true</publishOdom>
-      <robotBaseFrame>base</robotBaseFrame>
+      <publishTf>true</publishTf>
+      <publishOdomTF>true</publishOdomTF>      
+      <publishWheelTF>false</publishWheelTF>
       <publishWheelJointState>true</publishWheelJointState>
       <legacyMode>false</legacyMode>
+      <rosDebugLevel>na</rosDebugLevel>
 
     </plugin>
   </gazebo>
