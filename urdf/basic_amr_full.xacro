@@ -22,14 +22,14 @@
 
   <!-- Begin - Robot description -->
 
-  <link name="base_link" />
+  <link name="base_footprint" />
 
-  <joint name="base__base_link" type="fixed">
-    <parent link="base_link"/>
-    <child link="base"/>
+  <joint name="base_footprint__base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
   </joint>
 
-  <link name="base">
+  <link name="base_link">
     <origin rpy="0 0 0" xyz="0.00 0 0.00"/>
     <visual>
       <geometry>
@@ -67,8 +67,8 @@
     </inertial>
   </link>
   
-  <joint name="base__fcastor_wheel" type="continuous">
-    <parent link="base"/>
+  <joint name="base_link__fcastor_wheel" type="continuous">
+    <parent link="base_link"/>
     <child link="fcastor_wheel"/>
     <origin xyz="0.028 0 -0.005" rpy="1.5708 0 0"/>
     <axis xyz="0 0 1"/>
@@ -93,8 +93,8 @@
     </inertial>
   </link>
   
-  <joint name="base__bcastor_wheel" type="continuous">
-    <parent link="base"/>
+  <joint name="base_link__bcastor_wheel" type="continuous">
+    <parent link="base_link"/>
     <child link="bcastor_wheel"/>
     <origin xyz="-0.028 0 -0.005" rpy="1.5708 0 0"/>
     <axis xyz="0 0 1"/>
@@ -120,7 +120,7 @@
   </link>
   
   <joint name="wheel_left_joint" type="continuous">
-    <parent link="base"/>
+    <parent link="base_link"/>
     <child link="left_wheel"/>
     <origin xyz="0 0.032 0.007" rpy="1.5708 0 0"/>
     <axis xyz="0 0 -1"/>
@@ -146,7 +146,7 @@
   </link>
   
   <joint name="wheel_right_joint" type="continuous">
-    <parent link="base"/>
+    <parent link="base_link"/>
     <child link="right_wheel"/>
     <origin xyz="0 -0.032 0.007" rpy="1.5708 0 0"/>
     <axis xyz="0 0 -1"/>
